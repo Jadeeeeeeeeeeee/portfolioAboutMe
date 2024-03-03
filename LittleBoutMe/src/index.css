@@ -1,0 +1,84 @@
+html{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  height: 98%;
+  width: 98%;
+  background-color: rgb(22, 22, 108);
+}
+
+#root{
+  height: 98vh;
+}
+
+.SideBar{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 13%;
+  max-width: 13%;
+  background-color: gray;
+  font-family: arial, sans-serif;
+}
+
+.SideBarText{
+  position: absolute;
+  left: 1%;
+  top: 7%;
+}
+
+.SideBarOption{
+  list-style: none;
+  font-size: 1.5rem;
+  color: black;
+  font-family: arial,sans-serif;
+  margin-bottom: 0px;
+  width: inherit;
+  padding: 15px;
+}
+
+.SideBarOption:hover{
+  background-color: hsl(0, 0%, 70%);
+}
+
+.SideBar h1{
+  position: absolute;
+  left: 50%;
+  top: -1%;
+  transform: translate(-50%,-0%);
+  font-size: 1.3rem;
+  width: 200px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+.MainLittleBoutMe{
+  height: 80%;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: gray;
+  border-radius: 50px;
+  font-family: arial, sans-serif;
+}
+
+.MainLittleBoutMe h1{
+  margin-left: 20px;
+}
+
+.MainLittleBoutMe h3{
+  margin-left: 20px;
+}
+
+.MainLittleBoutMe p{
+  margin-left: 15px;
+  font-size: 1.28rem
+}
