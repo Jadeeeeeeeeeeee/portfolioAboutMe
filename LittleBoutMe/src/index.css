@@ -29,18 +29,22 @@ body{
 
 .SideBarText{
   position: absolute;
-  left: 1%;
+  left: 0%;
   top: 7%;
+  width: 100%;
 }
 
 .SideBarOption{
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 140%;
   color: black;
   font-family: arial,sans-serif;
   margin-bottom: 0px;
   width: inherit;
-  padding: 15px;
+  height: 56px;
+  width: 100%;
+  text-align:left;
+  line-height: 250%;
 }
 
 .SideBarOption:hover{
@@ -52,15 +56,16 @@ body{
   left: 50%;
   top: -1%;
   transform: translate(-50%,-0%);
-  font-size: 1.3rem;
+  font-size: 100%;
   width: 200px;
   text-align: center;
 }
 
-a{
+.SideBar a{
+  display: block;
+  width: 100%;
   text-decoration: none;
 }
-
 .MainLittleBoutMe{
   height: 80%;
   width: 50%;
@@ -84,4 +89,38 @@ a{
 .MainLittleBoutMe p{
   margin-left: 15px;
   font-size: 1.28rem
+}
+
+@media screen and (max-width: 320px) {
+  /* Styles for devices like iPhone 5/SE */
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  /* Styles for devices like iPhone 6/7/8 */
+}
+
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  /* Styles for devices like iPhone 6/7/8 Plus, Pixel 2 XL */
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  /* Styles for tablets in landscape mode and smaller laptops */
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Styles for larger tablets and small laptops */
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* Styles for larger laptops and desktops */
+
+}
+
+@media screen and (min-width: 1920px) {
+  /* Styles for large desktops and beyond */
+  body {
+    zoom: 150%;
+  }
 }
