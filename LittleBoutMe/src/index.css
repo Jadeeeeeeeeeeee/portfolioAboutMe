@@ -7,6 +7,7 @@ body{
   height: 98%;
   width: 98%;
   background-color: blue;
+  user-select: none;
 }
 
 #root{
@@ -25,6 +26,7 @@ body{
   max-width: 13%;
   background-color: rgb(205, 205, 205);
   font-family: arial, sans-serif;
+  user-select: none;
 }
 
 .SideBarText{
@@ -67,28 +69,98 @@ body{
   text-decoration: none;
 }
 .MainLittleBoutMe{
-  height: 80%;
-  width: 50%;
+  height: 100%;
+  width: 87%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 56.5%;
   transform: translate(-50%,-50%);
-  background-color: rgb(205, 205, 205);
-  border-radius: 50px;
   font-family: arial, sans-serif;
 }
 
-.MainLittleBoutMe h1{
-  margin-left: 20px;
+.header{
+  position: absolute;
+  left: 40%;
+  top: 15%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
 }
 
-.MainLittleBoutMe h3{
-  margin-left: 20px;
+.header:hover{
+  cursor: pointer;
 }
 
-.MainLittleBoutMe p{
-  margin-left: 15px;
-  font-size: 1.28rem
+.header h1{
+  font-weight: 400;
+}
+
+.Me{
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  width: 350px;
+  height: 200px;
+  background-color: rgb(255, 178, 36);  
+  border-radius: 30px;
+  transition: 1s;
+}
+
+.Me p{
+  font-size: 1.2rem;
+  text-align: center;
+  user-select: none;
+}
+
+.Me p:hover{
+  cursor:default;
+}
+
+.favoriteGames{
+  position: absolute;
+  left: 60%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(255, 37, 37);  
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  border-radius: 30px;
+  transition: 1s;
+}
+
+.favoriteGames p{
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+.favoriteGames p:hover{
+  cursor:default;
+}
+
+.hobbys{
+  position: absolute;
+  left: 40%;
+  top: 70%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(0, 255, 0); 
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  border-radius: 30px;
+  transition: 1s;
+}
+
+.hobbys p{
+  font-size: 1.2rem;
+  user-select: none;
+}
+
+.hobbys p:hover{
+  cursor:default;
 }
 
 @media screen and (max-width: 320px) {
